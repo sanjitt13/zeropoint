@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "skills": {
+    "better-auth-best-practices": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "0c30be0e118c2b7a0c4c57bd9e63bf110c7e420a79ec6ce7997153f3b1e066ee",
+      "wellKnownDigest": "sha256:2ca64e870d2b84b9f769fad6b322ac5e1eb3765db26a01f98f3fdb0b2a22cb56"
+    },
+    "find-skills": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396",
+      "wellKnownDigest": "sha256:b146008599c31057cef1c145774cea5d5afb30e8f43fa802e47a4b461419aaaf"
+    },
+    "frontend-design": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "b8c8329ad9b98fa57f4a279e37bdf4a0d55743140e54bb7da3e340d754d75b43",
+      "wellKnownDigest": "sha256:1b597153443ace6e4d32a29f9143c9b094aa96242ec49120a245e765af187655"
+    },
+    "neon-postgres": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "0fcd957ae70e245169794b42fc014534d5db7c23740688e181623370168ae889",
+      "wellKnownDigest": "sha256:44346af5a0d6a3e8b2f5a05bcc35a82ffb6235806b6ef2186cf00f1c37c8466d"
+    },
+    "next-dev-loop": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "d2a697a0a0429cad0bb7264644115457f588d4ed1007eeb0bb7f965b1185fa6e",
+      "wellKnownDigest": "sha256:fcfd05ce87d9edafda2e454f3f998bc45cb96fa2a3b695a4c3c144a9a13e7c39"
+    },
+    "resend": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "a36f7453747fa9de92d7e4a3efa0f45f3f908d343e9e2d1adbcafa234424024c",
+      "wellKnownDigest": "sha256:6888a3b59559518479ed1687df05454e8e4e16ce01d2bf9f2cb2f022e04b2377"
+    },
+    "shadcn": {
+      "source": "skills.sh",
+      "sourceUrl": "https://skills.sh/p/sqdQdWElm1amB4M9",
+      "sourceType": "well-known",
+      "computedHash": "d37ca78d3e027ab8ba1e4770327c83712c49232658d0fa0cccfda10da820e3c5",
+      "wellKnownDigest": "sha256:857f558f874c974fe467422b458ec38f386ae8199f603ea4f8d7d9d6d6fe51e2"
+    }
+  }
+}

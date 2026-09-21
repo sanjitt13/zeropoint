@@ -17,6 +17,36 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Database
+
+Postgres is hosted on [Neon](https://neon.com) and accessed through [Drizzle ORM](https://orm.drizzle.team).
+
+Connection strings live in `.env.local` and are pulled from the linked Neon branch with `neon link` / `neon deploy`. The app reads the pooled `DATABASE_URL`; Drizzle Kit uses the direct `DATABASE_URL_UNPOOLED` for migrations.
+
+| Path | Purpose |
+| --- | --- |
+| `lib/db/index.ts` | Drizzle client (`db`), server-only |
+| `lib/db/schema/` | Table definitions, re-exported from `index.ts` |
+| `lib/db/migrations/` | Generated SQL migrations — commit these |
+| `drizzle.config.ts` | Drizzle Kit configuration |
+
+Query from Server Components, Route Handlers, or Server Actions:
+
+```ts
+import { db, schema } from "@/lib/db";
+
+const users = await db.select().from(schema.demoUsers);
+```
+
+After changing anything in `lib/db/schema/`, generate a migration and apply it:
+
+```bash
+pnpm db:generate
+pnpm db:migrate
+```
+
+`pnpm db:studio` opens Drizzle Studio. `pnpm db:push` pushes the schema without a migration file — use it only against a throwaway Neon branch, never production.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
